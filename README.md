@@ -90,7 +90,8 @@ docker-compose down
 ---
 
 <div id="estrutura"></div>
-### Estrutura do Projeto 🗂
+<h2>Estrutura do Projeto 🗂<h2>
+
 ```
 bash
 draft-editor/
