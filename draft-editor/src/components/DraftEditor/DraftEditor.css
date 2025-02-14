@@ -1,0 +1,153 @@
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editor-container {
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-sizing: border-box; /* Corrige vazamento */
+
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--paper-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.controls-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.dark-mode-toggle {
+  background: none;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.drafts-toggle {
+  background: var(--primary);
+  color: white;
+}
+
+.paper-container {
+  background: var(--paper-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  min-height: 60vh;
+}
+
+.editor-controls {
+  background: var(--paper-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  position: relative; /* Mantém dentro do container */
+  overflow: hidden; /* Previne vazamentos */
+}
+
+.editor-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 100px;
+  max-width: 720px;
+  margin-bottom: 1rem;
+  background: var(--paper-bg);
+  color: var(--text-color);
+  
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.primary-button {
+  background: var(--secondary);
+  color: white;
+}
+
+.save-button {
+  background: var(--primary);
+}
+
+.overwrite-button {
+  background: var(--warning);
+  color: var(--text-color);
+}
+
+.clear-button {
+  background: var(--danger);
+}
+
+.drafts-panel {
+  background: var(--paper-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.draft-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--hover-bg);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load-button {
+  background: var(--secondary);
+}
+
+.delete-button {
+  background: var(--danger);
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    padding: 1rem;
+  }
+  
+  .paper-container {
+    padding: 1rem;
+    min-height: 50vh;
+  }
+  
+  .button-container {
+    grid-template-columns: 1fr;
+  }
+}

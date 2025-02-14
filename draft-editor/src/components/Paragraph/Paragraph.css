@@ -1,8 +1,66 @@
-.paragraph {
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    line-height: 1.5;
+.paragraph-container {
+  background: var(--paper-bg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  resize: vertical;
+  background: var(--paper-bg);
+  color: var(--text-color);
+}
+
+.edit-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: flex-end;
+}
+
+.save-btn {
+  background: var(--secondary);
+  color: white;
+}
+
+.cancel-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.paragraph-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.edit-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.delete-btn {
+  background: var(--danger);
+  color: white;
+}
+
+@media (min-width: 769px) {
+  .paragraph-controls {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
-  
+
+  .paragraph-container:hover .paragraph-controls {
+    opacity: 1;
+  }
+}
