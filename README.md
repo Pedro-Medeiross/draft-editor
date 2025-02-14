@@ -91,7 +91,9 @@ docker-compose down
 
 <div id="estrutura"></div>
 ### 🗂 Estrutura do Projeto
+
 ```
+bash
 draft-editor/
 ├── draft-editor/          # Pasta principal do React
 │   ├── src/               # Código fonte
