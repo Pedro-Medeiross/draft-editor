@@ -1,11 +1,12 @@
 import React from 'react';
+import './Paragraph.css'
 
-const Paragraph = () => {
+const Paragraph = ({ text }) => {
 
     return (
-        <div>
-            <h1>Paragraph</h1>
-        </div>
+        <p className='paragraph'>
+            {text}
+        </p>
     )
 }
 
