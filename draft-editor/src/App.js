@@ -1,9 +1,10 @@
 import './App.css';
+import DraftEditor from './components/DraftEditor';
 
 function App() {
   return (
     <div className="App">
-      <p>Initial APP</p>
+      <DraftEditor />
     </div>
   );
 }
