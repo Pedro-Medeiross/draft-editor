@@ -90,7 +90,7 @@ docker-compose down
 ---
 
 <div id="estrutura"></div>
-### 🗂 Estrutura do Projeto
+### Estrutura do Projeto 🗂
 
 ```
 bash
