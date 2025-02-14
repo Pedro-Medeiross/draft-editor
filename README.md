@@ -68,6 +68,7 @@ git clone https://github.com/Pedro-Medeiross/draft-editor.git
 cd draft-editor/draft-editor  # Acesse a subpasta do projeto
 npm install --force  # Ignora erros de peer dependencies
 npm start
+```
 
 ---
 
